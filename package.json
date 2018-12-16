@@ -1,0 +1,22 @@
+{
+  "name": "node-red",
+  "version": "1.0.0",
+  "description": "Example app for FIS.",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "node-red": "^0.19.5",
+    "node-red-contrib-fis": "../node-red-contrib-fis/",
+    "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "dev": "nodemon ./node_modules/.bin/node-red --settings settings.js --userDir . ./flows.json"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "../node-red-contrib-fis/"
+    ],
+    "ext": "html,js,json"
+  }
+}
