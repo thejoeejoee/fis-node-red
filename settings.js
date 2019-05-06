@@ -14,5 +14,6 @@ module.exports = {
         default: {
             permissions: "read"
         }
-    }
+    },
+    credentialSecret: "asduhewqtsa5f4g8satr18s4df68a4srg84e168s4g68syfg4",
 };
